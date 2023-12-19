@@ -7,7 +7,7 @@ const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
   base: "/",
-  title: '不悔下凡',
+  title: '空空的笔记',
   plugins: [searchPlugin({}),registerComponentsPlugin({componentsDir: path.resolve(__dirname, './components')})
   ],
   theme,

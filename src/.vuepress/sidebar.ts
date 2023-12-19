@@ -1,8 +1,9 @@
 import { sidebar } from "vuepress-theme-hope";
+import { fileList} from './utils'
 
-export const enSidebar = sidebar({
-  "/pages/demo/": ['',],
-  "/pages/memo/": ['',],
-  
-});
+let nav = {
+}
+let fullNav = {...fileList, ...nav}
+// console.log('fullNav-----------', fileList)
+export const enSidebar = sidebar(fullNav);
 

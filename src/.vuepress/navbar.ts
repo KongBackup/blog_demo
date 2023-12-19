@@ -1,12 +1,14 @@
 import { navbar } from "vuepress-theme-hope";
-
+import {navList} from './utils'
+ 
 export const enNavbar = navbar([
   "/",
   {
     text: "使用模版",
     children: [
-      {text: "demo", link: "/pages/demo/"},
-      {text: "memo", link: "/pages/memo/"},
+      {text: "MAC", link: "/pages/工具箱/MAC/"},
+      {text: "memo", link: "/pages/未分类/memo/"},
     ]
   },
+  ...navList
 ]);
